@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Vampire Twine.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Vampire Twine" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="0937E840-9B59-441F-83FB-998686EAFA22" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="700,325" size="200,200">&lt;style&gt;
+<tw-storydata name="Vampire Twine" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="0937E840-9B59-441F-83FB-998686EAFA22" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="700,325" size="200,200">&lt;style&gt;
 /* =========================
    CONFIGURAÇÃO GLOBAL
 ========================= */
@@ -450,14 +450,11 @@ tw-link:hover {
     &lt;p&gt;Jennie estava diferente. Havia algo estranho em seu jeito, impaciente, irritada com qualquer coisa. Não era como ela, pelo menos não como eu conhecia. Talvez fosse apenas cansaço, pensei, tentando me convencer de que era algo simples. Mas, mesmo assim, a sensação de que algo estava fora do lugar não me deixava em paz.&lt;/p&gt;
 
     [[Próximo -&gt;Girlfriend_3]]
-    &lt;/div&gt;
+     &lt;/div&gt;
   
-
   &lt;div class=&quot;imagem&quot;&gt;
     &lt;img src=&quot;images/girlfriend.png&quot; alt=&quot;Namorada de costas&quot;&gt;
   &lt;/div&gt;
-  
-  
   
   
 
@@ -911,20 +908,5501 @@ tw-link:hover {
   
   
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Girlfriend_3" tags="" position="1800,500" size="100,100">    [[Próximo -&gt;Girlfriend_4]]
-    &lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Girlfriend_4" tags="" position="2000,500" size="100,100">    [[Próximo -&gt;FightWithDad]]
-    &lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="FightWithDad" tags="" position="2175,350" size="100,100">    [[Próximo -&gt;(Sister)Ato2_1]]
-    &lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="(Sister)Ato2_1" tags="" position="800,700" size="100,100">    [[Ato1_2]]
-    &lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Ato1_2" tags="" position="1000,700" size="100,100">    [[Próximo -&gt;Ato1_3]]
-    &lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Ato1_3" tags="" position="1200,700" size="100,100">    [[Próximo -&gt;Ato1_4]]
-    &lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Ato1_4" tags="" position="1400,700" size="100,100">     [[Pedir desculpas para o meu pai-&gt;Act1_Dad_1]]
-     [[Falar para a minha irmã -&gt;Act1_Sister_1]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Girlfriend_3" tags="" position="1800,500" size="100,100">   &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+&lt;div class=&quot;cabecalho&quot;&gt;
+  &lt;h1&gt;A terceira semana de quarentena...&lt;/h1&gt;
+  &lt;h2&gt;30/06/1970&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Comentei que talvez fosse bom ela ir ao hospital, só por precaução. Ela reagiu rápido, dizendo que não precisava, que já estava começando a melhorar. Mas o jeito como falou seco e impaciente, me deixou com a sensação de que algo não estava certo. Não parecia só cansaço ou uma gripe comum. Ainda assim, preferi não insistir.&lt;/p&gt;
+
+   [[Próximo -&gt;Girlfriend_4]]
     &lt;/div&gt;
-    &lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Act1_Sister_1" tags="" position="1600,900" size="100,100">[[Próximo -&gt;Act2_1]]</tw-passagedata><tw-passagedata pid="15" name="Act1_Dad_1" tags="" position="1600,700" size="100,100">    [[Próximo -&gt;Act1_Dad_2]]
-    &lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Act1_Dad_2" tags="" position="1800,700" size="100,100">[[Próximo -&gt;Act1_Dad_3]]</tw-passagedata><tw-passagedata pid="17" name="Act1_Dad_3" tags="" position="2000,700" size="100,100">[[Próximo -&gt;Act1_Dad_4]]</tw-passagedata><tw-passagedata pid="18" name="Act1_Dad_4" tags="" position="2200,700" size="100,100">[[Próximo -&gt;Act2_1]]</tw-passagedata><tw-passagedata pid="19" name="Act2_1" tags="" position="800,1200" size="100,100">[[Próximo -&gt;Act2_2]]</tw-passagedata><tw-passagedata pid="20" name="Act2_2" tags="" position="1000,1200" size="100,100">[[Próximo -&gt;Act2_3]]</tw-passagedata><tw-passagedata pid="21" name="Passagem sem Título" tags="" position="600,975" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="Act2_3" tags="" position="1200,1200" size="100,100">[[Próximo -&gt;Act2_Dad_1]]
-[[Próximo -&gt;Act2_Sister_1]]</tw-passagedata><tw-passagedata pid="23" name="Act2_Dad_1" tags="" position="1400,1100" size="100,100">[[Próximo -&gt;Act2_TellDad]]</tw-passagedata><tw-passagedata pid="24" name="Act2_Sister_1" tags="" position="1400,1300" size="100,100">[[Próximo -&gt;Act2_TellSister]]</tw-passagedata><tw-passagedata pid="25" name="Act2_TellDad" tags="" position="1600,1100" size="100,100">[[Próximo -&gt;Act3_TellDad_1]]
-[[Próximo -&gt;Act3_HideCondition_1]]</tw-passagedata><tw-passagedata pid="26" name="Act2_TellSister" tags="" position="1600,1300" size="100,100">[[Próximo -&gt;Act3_TellSister_1]]
-[[Próximo -&gt;Act3_HideCondition_1]]</tw-passagedata><tw-passagedata pid="27" name="Act3_HideCondition_1" tags="" position="800,1900" size="100,100">[[Próximo -&gt;Act3_HideCondition_2]]</tw-passagedata><tw-passagedata pid="28" name="Act3_TellDad_1" tags="" position="800,1500" size="100,100">[[Próximo -&gt;Act3_TellDad_2]]</tw-passagedata><tw-passagedata pid="29" name="Act3_TellSister_1" tags="" position="800,1700" size="100,100">[[Próximo -&gt;Act3_TellSister_2]]</tw-passagedata><tw-passagedata pid="30" name="Act3_TellDad_2" tags="" position="1000,1500" size="100,100">[[Próximo -&gt;Act3_TellDad_3]]</tw-passagedata><tw-passagedata pid="31" name="Act3_TellDad_3" tags="" position="1200,1500" size="100,100">[[Próximo -&gt;Act3_TellDad_4]]</tw-passagedata><tw-passagedata pid="32" name="Act3_TellDad_4" tags="" position="1400,1500" size="100,100">[[Próximo -&gt;Act3_TellDad_5]]</tw-passagedata><tw-passagedata pid="33" name="Act3_TellDad_5" tags="" position="1600,1500" size="100,100">[[Próximo -&gt;Act3_TellDad_6]]</tw-passagedata><tw-passagedata pid="34" name="Act3_TellDad_6" tags="" position="1800,1500" size="100,100">[[Próximo -&gt;Act3_TellDad_7]]</tw-passagedata><tw-passagedata pid="35" name="Act3_TellDad_7" tags="" position="2000,1500" size="100,100">[[Próximo -&gt;Act3_TellDad_8]]</tw-passagedata><tw-passagedata pid="36" name="Act3_TellDad_8" tags="" position="2200,1500" size="100,100">[[Próximo -&gt;Act3_TellDad_9]]</tw-passagedata><tw-passagedata pid="37" name="Act3_TellDad_9" tags="" position="2400,1500" size="100,100"></tw-passagedata><tw-passagedata pid="38" name="Act3_TellSister_2" tags="" position="1000,1700" size="100,100">[[Próximo -&gt;Act3_TellSister_3]]</tw-passagedata><tw-passagedata pid="39" name="Act3_TellSister_3" tags="" position="1200,1700" size="100,100">[[Próximo -&gt;Act3_TellSister_4]]</tw-passagedata><tw-passagedata pid="40" name="Act3_TellSister_4" tags="" position="1400,1700" size="100,100">[[Próximo -&gt;Act3_TellSister_5]]</tw-passagedata><tw-passagedata pid="41" name="Act3_TellSister_5" tags="" position="1600,1700" size="100,100"></tw-passagedata><tw-passagedata pid="42" name="Act3_HideCondition_2" tags="" position="1000,1900" size="100,100">[[Próximo -&gt;Act3_HideCondition_3]]</tw-passagedata><tw-passagedata pid="43" name="Act3_HideCondition_3" tags="" position="1200,1900" size="100,100">[[Próximo -&gt;Act3_HideCondition_4]]</tw-passagedata><tw-passagedata pid="44" name="Act3_HideCondition_4" tags="" position="1400,1900" size="100,100">[[Próximo -&gt;Act3_HideCondition_5]]</tw-passagedata><tw-passagedata pid="45" name="Act3_HideCondition_5" tags="" position="1600,1900" size="100,100">[[Próximo -&gt;Act3_HideCondition_6]]</tw-passagedata><tw-passagedata pid="46" name="Act3_HideCondition_6" tags="" position="1800,1900" size="100,100">[[Próximo -&gt;Act3_HideCondition_7]]</tw-passagedata><tw-passagedata pid="47" name="Act3_HideCondition_7" tags="" position="2000,1900" size="100,100"></tw-passagedata></tw-storydata>
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/girlfriend.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Girlfriend_4" tags="" position="2000,500" size="100,100">  &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+&lt;div class=&quot;cabecalho&quot;&gt;
+  &lt;h1&gt;A terceira semana de quarentena...&lt;/h1&gt;
+  &lt;h2&gt;30/06/1970&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;No fim, decidi ir para casa. Insistir não parecia ajudar em nada, e talvez ela só precisasse de um tempo. Quem sabe, da próxima vez que eu vier visitá-la, as coisas estejam melhores — ou pelo menos mais claras.&lt;/p&gt;
+
+ [[Próximo -&gt;FightWithDad]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/girlfriend.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+
+&lt;/div&gt; </tw-passagedata><tw-passagedata pid="9" name="FightWithDad" tags="" position="2175,350" size="100,100">
+&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+&lt;div class=&quot;cabecalho&quot;&gt;
+  &lt;h1&gt;A terceira semana de quarentena...&lt;/h1&gt;
+  &lt;h2&gt;30/06/1970&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Assim que abri a porta de casa, meu pai já começou a falar, disse que eu havia desobedecido o toque de recolher, que aquilo era inaceitável. Nem esperou eu explicar. Ele nunca entende meus motivos, nunca tenta ouvir o que realmente está acontecendo. Pra ele, é sempre preto no branco. E eu...só queria um pouco de compreensão!&lt;/p&gt;
+
+
+ [[Próximo -&gt;(Sister)Ato2_1]]
+    &lt;/div&gt;
+  
+ &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Dad.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;
+
+</tw-passagedata><tw-passagedata pid="10" name="(Sister)Ato2_1" tags="" position="800,700" size="100,100">   &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+&lt;div class=&quot;cabecalho&quot;&gt;
+  &lt;h1&gt;A manhã seguinte...&lt;/h1&gt;
+  &lt;h2&gt;31/06/1970&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Na manhã seguinte, todos estavam à mesa para o café, como de costume. O cheiro de café passado preenchia a cozinha, misturado ao som baixo da televisão. Meu pai lia o jornal encostado na borda da mesa, óculos na ponta do nariz, como se nada no mundo pudesse surpreendê-lo. 
+Minha irmã, do outro lado, mexia no celular enquanto empurrava o pão com pouca vontade, claramente mais interessada nas mensagens do que no noticiário. Foi então que a matéria começou.&lt;/p&gt;
+
+  [[Próximo-&gt;Ato1_2]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Dinner.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Ato1_2" tags="" position="1000,700" size="100,100">   &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;O apresentador falava em tom grave: sequelas permanentes nos infectados, risco elevado de contágio. Senti meu estômago apertar. 
+As palavras ecoavam com um peso diferente agora. Olhei para a tela, tentando não demonstrar o frio que subiu pela minha espinha. Não era só uma gripe. E talvez Jennie não estivesse apenas cansada..&lt;/p&gt;
+
+  [[Próximo -&gt;Ato1_3]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Dinner.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Ato1_3" tags="" position="1200,700" size="100,100">   &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Senti uma leve tontura enquanto levantava da mesa, como se o chão tivesse perdido um pouco da firmeza. Meus olhos ardiam, e piscar só fazia a sensação piorar. Levei a mão à testa, tentando disfarçar. 
+Estava começando a me sentir mal. Será que deveria contar a alguém? Avisar meu pai, talvez? Mas e se for só cansaço, só sugestão depois do que vi no noticiário? Ainda assim...algo dentro de mim começava a dizer que aquilo não era só impressão.&lt;/p&gt;
+
+ [[Próximo -&gt;Ato1_4]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Dinner.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Ato1_4" tags="" position="1400,700" size="100,100">    &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 25%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Dad_outside.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Me levantei devagar e fui até o banheiro, sem dizer nada. Fechei a porta com cuidado, encostando as costas contra ela por um instante. O espelho me encarava com sinceridade cruel, meus olhos estavam vermelhos, fundos, e havia um brilho estranho neles, como febre contida. 
+A tontura não passava. Apoiei as mãos na pia, respirei fundo. Foi então que a ficha começou a cair. E se...? Balancei a cabeça, afastando o pensamento. Não, não podia ser. O que quer que fosse, ia passar. Era só um mal-estar, só um susto depois de uma noite tensa. Eu não podia começar a imaginar coisas agora.&lt;/p&gt;
+ 
+
+[[Falar com o pai-&gt;Dad_1]]
+[[Falar com a irmã -&gt;Sister_1]]
+    &lt;/div&gt;
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Sister.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+      &lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Sister_1" tags="" position="1600,900" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Encontrei minha irmã sentada no sofá, olhando pro nada. Durante o café, já parecia triste, então resolvi perguntar.
+— Tá tudo bem?
+Ela hesitou, depois falou baixo:
+— Me sinto sozinha aqui. Ninguém escuta de verdade... só cobram.
+Fiquei em silêncio por um momento, surpreso. Então ela me olhou.
+— Eu te vi saindo ontem à noite. Pela janela.
+Meu corpo travou por um instante.
+— Mas calma — ela completou —, não vou contar pra ninguém. Prometo.
+Assenti, sem saber muito o que dizer. Pela primeira vez, senti que ela só queria ser ouvida, assim como eu.()
+&lt;/p&gt;
+
+   [[Próximo -&gt;Act2_1]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Sister_sofa.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Dad_1" tags="" position="1600,700" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Encontrei meu pai na varanda, tomando café em silêncio. Me aproximei devagar.
+— Pai... desculpa por ontem. Eu não devia ter saído.
+Ele não me olhou de imediato, só assentiu levemente.
+— Sua mãe foi pro interior, ajudar sua irmã. Disse que é melhor ficar longe até entenderem o que tá acontecendo — falou em voz baixa.
+Fez uma pausa, depois continuou:
+— Falei com o Cláudio, nosso vizinho. A filha de uma colega da escola tá internada com os mesmos sintomas. Piorou rápido.
+Olhou pra mim, sério.
+— Isso não é só uma gripe, tem algo errado e ninguém tá dizendo tudo o que sabe.
+Fiquei em silêncio. A sensação era clara: alguma coisa estava vindo e não ia ser leve.&lt;/p&gt;
+
+[[Próximo -&gt;Dad_2]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Dad_outside.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  </tw-passagedata><tw-passagedata pid="16" name="Dad_2" tags="" position="1800,700" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;—Vim pedir desculpas. Não importa como eu me senti ontem, eu estava errado e não devia ter gritado com o senhor. — Eu admito com alguma dificuldade.
+—Agora sim, desculpas aceitas filhão. —Imediatamente ele muda para um tom mais alegre. 
+—Quarenta prolongada e punição o suficiente para você e eu. Mais alguma coisa? Ou quer continuar a assistindo o noticiário o dia inteiro?&lt;/p&gt;
+
+[[Próximo -&gt;Dad_3]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Dad_outside.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  </tw-passagedata><tw-passagedata pid="17" name="Dad_3" tags="" position="2000,700" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;—Aonde a mamãe foi mesmo? —eu pergunto realmente não lembrando mais o que o meu pai tinha me dito 1 mês atras. 
+—San Jose, meio longe daqui. Ela foi ver a sua tia Lois. Eu tentei falar para ela voltar assim que eles deram os primeiros avisos, mas você sabe como a sua mãe é. Não que eu soubesse que seria tão ruim, mais ainda sim, eu estava certo.
+—Apesar de que eu adoraria fugir no meio da noite para trazer ela de volta, se eu for preso vocês vão tocar fogo na casa ou morrer de frio quando o aquecedor quebrar.&lt;/p&gt;
+
+    [[Próximo -&gt;Dad_4]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Dad_outside.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  </tw-passagedata><tw-passagedata pid="18" name="Dad_4" tags="" position="2200,700" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;—Legal pai...— eu tento interromper ele antes que ele continue. — falando nisso terminou de consertar o aquecedor?
+Ele levanta do chão e joga a chave de fenda na caixa de ferramenta e diz:
+—Não tava quebrado, só troquei os canos para passar o tempo mesmo.
+Ele da um sorriso rápido e passa a mão no meu cabelo.
+— Lê um livro garoto. Se sentir saudade da tua namorada toma um banho gelado.&lt;/p&gt;
+
+    [[Próximo -&gt;Act2_1]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Dad.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+</tw-passagedata><tw-passagedata pid="19" name="Act2_1" tags="" position="600,1150" size="100,100">   &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+&lt;div class=&quot;cabecalho&quot;&gt;
+  &lt;h1&gt;O segredo...&lt;/h1&gt;
+  &lt;h2&gt;01/07/1970&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;A noite caía silenciosa quando o noticiário voltou a alertar sobre novos apagões programados. A voz grave do apresentador pedia que ninguém abrisse a porta para estranhos, reforçando o clima de medo que já pairava no ar. 
+Eu fiquei parado diante da janela, observando a escuridão que tomava conta do bairro. O mundo lá fora parecia ter se apagado junto com as luzes. O sono não vinha mais; as noites viraram vigílias longas e inquietas&lt;/p&gt;
+
+
+[[Próximo -&gt;Act2_2]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/House.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Act2_2" tags="" position="800,1150" size="100,100">   &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Curiosamente, notei que minha visão no escuro começava a melhorar, eu conseguia distinguir formas e movimentos mesmo com pouca luz. Foi então que algo chamou minha atenção: olhos brilhantes, distantes, fixos em mim. Seria um animal? Ou algo que eu não conseguia compreender? Um aperto tomou meu peito. A solidão crescia junto com os sintomas que me consumiam, cada vez mais fortes. Eu estava sozinho e talvez, à mercê de algo maior e desconhecido.&lt;/p&gt;
+
+ [[Próximo -&gt;Act2_43]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Window.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Act2_3" tags="" position="200,1675" size="100,100">   &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Enquanto ouvia as palavras do meu pai, uma memória voltou à minha mente: a visita recente de um policial que foi de porta em porta no bairro. Ele avisava que uma “gangue” estava tentando invadir casas à noite, deixando todos em alerta. A voz firme do policial ainda ecoava na minha cabeça, junto com o olhar preocupado dos vizinhos. 
+Naquela hora, parecia algo distante, quase inacreditável. Mas agora, com o apagão programado e os rumores que meu pai repetia, tudo soava muito mais real e assustador.&lt;/p&gt;
+
+ [[Contar para o pai -&gt;Ending1_0]]
+  [[Contar para a irmã -&gt;Ending2_0]]
+[[Esconder -&gt;Ending3_1]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Candle.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Ending1_0" tags="" position="575,1500" size="100,100">   &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Quando finalmente contei ao meu pai sobre os sintomas, ele não escondeu a preocupação, mas também não deixou de me dar uma bronca.
+— Você não devia ter saído de casa assim, colocando tudo em risco — falou, com a voz firme, mas os olhos traindo a apreensão.
+Ele suspirou, passando a mão no rosto.
+— Mas eu sei... eu entendo que não foi fácil. Só não sei o que essas autoridades vão fazer com você quando descobrirem. E eu não confio nelas, nem um pouco.
+Ficamos em silêncio, cada um perdido em seus pensamentos. No fim, o que havia era uma mistura de medo, impotência e a certeza de que, por enquanto, não havia muito o que fazer.&lt;/p&gt;
+
+[[Próximo -&gt;Ending1_1]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Dad.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Ending2_0" tags="" position="575,1700" size="100,100">   &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Se eu contasse para minha irmã, sabia que ela guardaria segredo. Ela sempre foi aquela que, apesar de tudo, parecia entender sem precisar de muitas palavras. Ela não entende nada de remédios ou cuidados, mas talvez eu pudesse pedir para ela comprar algo para mim. Assim, eu não precisaria preocupar nem estressar meu pai com isso. Era estranho pensar nisso, mas no meio de tanta confusão, contar com ela parecia a solução mais segura. Pelo menos, alguém ali estaria do meu lado, disposto a ajudar do jeito que pudesse.
+Quando falei sobre o que estava sentindo, vi nos olhos dela uma mistura de preocupação e determinação silenciosa.
+— Pode deixar comigo — ela disse baixinho. — Não vou contar para ninguém. E vou fazer o que for preciso pra te proteger.
+Aquela promessa trouxe um alívio inesperado. Mesmo com tudo desmoronando ao nosso redor, eu não estaria sozinho.&lt;/p&gt;
+
+[[Próximo -&gt;Ending2_1]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Sister.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Ending3_1" tags="" position="800,1900" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+&lt;div class=&quot;cabecalho&quot;&gt;
+  &lt;h1&gt;A fuga&lt;/h1&gt;
+  &lt;h2&gt;02/08/1970&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Cinco meses se passaram desde o início da quarentena, o pouco tempo de energia que é nos fornecida é o suficiente para ouvir mais um anuncio que novos apagões serão instituídos. Quase nenhuma informação e dada pelas autoridades, tudo que sabemos são rumores e barulhos a distância; Já tarde demais para mudar o rumo das coisas, eu olha pela última vez a casa que um dia foi meu lar. Juntos eu e minha irmã decidimos que não havia outra escolha se não deixar tudo para trás.&lt;/p&gt;
+[[Próximo -&gt;Ending3_2]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Intro_tr.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Ending1_1" tags="" position="800,1500" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+&lt;div class=&quot;cabecalho&quot;&gt;
+  &lt;h1&gt;A perseguição&lt;/h1&gt;
+  &lt;h2&gt;02/08/1970&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Cinco meses se passaram desde o início da quarentena, o pouco tempo de energia que é nos fornecida é o suficiente para ouvir mais um anuncio que novos apagões serão instituídos. &lt;/p&gt;
+ 	&lt;p&gt;Quase nenhuma informação e dada pelas autoridades, tudo que sabemos são rumores e barulhos a distância — Estamos sendo invadidos? os russos finalmente nos atacaram? Eu não queria acreditar mas eu acho que meu pai estava certo. Isso deve ser alguma arma química. Tentar raciocinar essa situação irracional é tudo que me resta.&lt;/p&gt;
+    [[Próximo -&gt;Ending1_2]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Intro_tr.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Ending2_1" tags="" position="800,1700" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+&lt;div class=&quot;cabecalho&quot;&gt;
+  &lt;h1&gt;A fuga&lt;/h1&gt;
+  &lt;h2&gt;02/08/1970&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Cinco meses se passaram desde o início da quarentena, o pouco tempo de energia que é nos fornecida é o suficiente para ouvir mais um anuncio que novos apagões serão instituídos. Quase nenhuma informação e dada pelas autoridades, tudo que sabemos são rumores e barulhos a distância; Já tarde demais para mudar o rumo das coisas, eu olha pela última vez a casa que um dia foi meu lar. Juntos eu e minha irmã decidimos que não havia outra escolha se não deixar tudo para trás.&lt;/p&gt;
+[[Próximo -&gt;Ending2_2]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Intro_tr.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Ending1_2" tags="" position="1000,1500" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;No meio da noite eu acordo com o som de batidas na entrada da casa. Descendo as escadas para ver quem poderia ser vejo o meu pai subindo da minha direção.
+—Adam, tem um policial na frente da porta.
+Ele diz sussurrando.
+—Ele disse algo?
+Eu respondo preocupado
+—Não, eu não atendi ainda, mas fica no seu quarto e não desce até eu falar que você pode. Eu não confio nessa pessoa, me ouviu?
+—Ouvi.&lt;/p&gt;
+   [[Próximo -&gt;Ending1_3]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Stairs.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Ending1_3" tags="" position="1200,1500" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Sem falar mais nada eu volto para o meu quarto e meu pai desce para atender o policial. Eu me debrucei contra a porta para tentar ouvir um pouco da conversa. Parece que ele falou que houve um tipo de surto aqui perto e ele precisa checar as casas. Não consegui ouvi tudo mas entendi que eles iriam realizar alguns testes e precisavam de todo mundo da casa.
+Quase sem pensar eu começo a elaborar um jeito de sair desça situação. Eu abro a janela e tento descer pelo telhado da casa e cair no jardim. Eu acabo tropeçando e caindo de costa no grama. Eu devo ter feito muito barulho porque ouço algo vindo de dentro da casa.&lt;/p&gt;
+   [[Próximo -&gt;Ending1_4]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/House.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Ending1_4" tags="" position="1400,1500" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Rapidamente eu corro em direção a cerca do vizinho pulando-a. Mas antes que pudesse uma luz ilumina as minhas costas. Em algum lugar atrás de mim o policial aponta uma lanterna na minha direção e grita.
+—Ei! Volta aqui!
+Eu apenas pulo a cerca e ouço um disparo, logo depois eu ouço o meu pai.
+—O que você está fazendo?! Saia da minha casa e deixe o meu filho em paz!&lt;/p&gt;
+[[Próximo -&gt;Ending1_5]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Jumping_walls.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="Ending1_5" tags="" position="1600,1500" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Eu corri por algum tempo, mas eu não conseguia me achar em meio a vastidão de casas no meu bairro. O mundo ao meu redor tinha mudado, diversas casas estavam cobertas com lonas, o tinham portas e janelas fechadas com tábuas de madeira. Eu parei por um segundo para tentar me orientar, mas foi quando um carro rapidamente virou rua com suas luzes apontadas para mim.
+De dentro saíram dois policiais e eu não tinha a menor ideia se um deles era o mesmo que entrou na minha casa antes; a resposta veio rapidamente.&lt;/p&gt;
+[[Próximo -&gt;Ending1_6]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Mountain.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Ending1_6" tags="" position="1800,1500" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;—Pegamos o suspeito. 
+Avisa o Arthur e o parceiro dele.
+Agora cercado pelos policiais a única coisa que eu podia fazer era me render. Mas antes de ser algemado eu ouço um grito que corta a conversa dos agentes.&lt;/p&gt;
+[[Próximo -&gt;Ending1_7]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Cop.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Ending1_7" tags="" position="2000,1500" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;No Início, olhando por cima da cerca, era 1 em seguida eram 4 depois eu parei de contar e comecei a correr. Os policiais estavam ocupados demais com eles para me notar fugindo. Eu olhei por um segundo bem na hora ver um daquelas coisas levando um tiro, somente para outra logo depois pular em cima do mesmo policial.&lt;/p&gt;
+[[Próximo -&gt;Ending1_8]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Jumping_walls2.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Ending1_8" tags="" position="2200,1500" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Quando voltei a correr vi um vão passar por mim. Uma daquelas coisas foi em direção aos policiais e me ignorou. Por menos de um segundo eu vi, aqueles olhos que brilham no escuro, eu estava seguro agora , eu não estava mais sozinho.&lt;/p&gt;
+[[Próximo -&gt;Fim]]
+    &lt;/div&gt;
+
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Ending2_2" tags="" position="1000,1700" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Eu não sei o que nos espera pela frente, o bairro é irreconhecível. Eu e a Amy passamos por casas cobertas por lonas, e tábuas de madeira; nos escondemos atrás de arbustos sempre que ouvimos um carro de patrulha se aproximando e conforme eu guio minha irmã na escuridão, eu sinto que talvez essa seja uma má ideia. Mas o instinto me diz para continuar, o delírio que eu sentia anteriormente e substituído por foco que eu nunca senti na minha vida.&lt;/p&gt;
+[[Próximo -&gt;Ending2_3]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Mountain.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="Ending2_3" tags="" position="1200,1700" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Um carro de polícia se aproxima. Escapamos em direção a uma área arborizada da vizinhança, já bem longe de casa. Eu não tenho a menor ideia de onde eu deveria ir. Campton talvez? Se nos acharmos nossa mãe talvez as coisas melhorem. E difícil fazer isso sozinho, pensei em convencer o meu pai a ir com a gente, mas eu sabia que não ir dar em nada...&lt;/p&gt;
+[[Próximo -&gt;Ending2_4]]
+    &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Ending2_4" tags="" position="1400,1700" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Enquanto esperamos o carro passar, de vez em quando, eu dou uma olhada na minha irmã. Ela parece aparvoada, não me ocorreu até agora, mas ela não vê nada na escuridão do apagão. Ela confiou em mim até agora sem nunca parar para perguntar nada. Eu não sei o que dizer. Então prefiro não falar nada. Eu olho a minha volta e vejo olhos brilhando entre a vegetação, contei pelo menos uns 12. Isso me faz me sentir melhor. Ao menos nos não estamos mais sozinhos.&lt;/p&gt;
+[[Próximo -&gt;Fim]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Sister.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Ending3_2" tags="" position="1000,1900" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;No meio da noite ouço batidas na porta. Ao descer as escadas eu me deparo com uma cena familiar. Meu pai estava conversando com um policial, mas o oficial dessa vez ele estava armado com uma escopeta pendurada no seu ombro. Antes que eu pudesse voltar para o meu quarto o policial levanta a voz.
+—Ei Moleque! Volta aqui, inspeção surpresa. Eu preciso fazer uma avaliação de todos os residentes dessa casa.&lt;/p&gt;
+   [[Próximo -&gt;Ending3_3]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Stairs.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Ending3_3" tags="" position="1200,1900" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Meu pai o interrompe ele perguntando se algo aconteceu. Inspeções nunca são feitas no meio da noite, pelo menos nos nunca recebemos uma inspeção noturna antes. E para minha surpresa recebemos uma resposta direta.
+—Tivemos um surto nos arredores desse bairro ontem a noite, precisamos fazer uma checagem geral para saber que nada se espalhou.&lt;/p&gt;
+   [[Próximo -&gt;Ending3_4]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Cop.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Ending3_4" tags="" position="1400,1900" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Meu pai o interrompe ele perguntando se algo aconteceu. Inspeções nunca são feitas no meio da noite, pelo menos nos nunca recebemos uma inspeção noturna antes. E para minha surpresa recebemos uma resposta direta.
+—Tivemos um surto nos arredores desse bairro ontem a noite, precisamos fazer uma checagem geral para saber que nada se espalhou.&lt;/p&gt;
+   [[Próximo -&gt;Ending3_5]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Cop.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="40" name="Ending3_5" tags="" position="1600,1900" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Com isso o policial puxa uma lanterna, um termômetro, um par de luvas e uma máscara médica. Nesse momento sinto um frio na barriga, uma sensação de desespero como nenhuma outra. Meu pai me pergunta se estou bem e apenas balanço a cabeça confirmando.&lt;/p&gt;
+   [[Próximo -&gt;Ending3_6]]
+    &lt;/div&gt;
+  
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Cop.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Ending3_6" tags="" position="1800,1900" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;A inspeção prossegue normalmente, meu pai acorda a Amy e um a um passamos por alguns exames. De acordo com o agente eu tenho um quadro possivelmente preocupante e preciso ser levado para o hospital o quanto antes. Sem poder tocar os meus familiares eu aceno para eles pela última vez enquanto entro na viatura.&lt;/p&gt;
+   [[Próximo -&gt;Fim]]
+    &lt;/div&gt;
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Act2_43" tags="" position="1000,1150" size="100,100">   &lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+  &lt;div class=&quot;texto&quot;&gt;
+    &lt;p&gt;Meu pai vinha falando cada vez mais sobre os rumores que circulavam pela vizinhança. Dizia que várias pessoas tinham sido levadas pela polícia e por agentes sanitários e que ninguém jamais voltava.
+— Dizem que quem é levado...some de verdade — ele falou baixo, olhando para o chão, como se falar disso já trouxesse um peso enorme. Ninguém sabe o que acontece depois disso, e o governo não explica nada. 
+Eu ouvia, meio descrente, meio assustado. Aquilo só aumentava o medo que já crescia dentro da casa, uma sombra que parecia engolir tudo. O silêncio entre nós ficava mais pesado a cada dia.&lt;/p&gt;
+
+ [[Próximo -&gt;Act2_3]]
+    &lt;/div&gt;
+  
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/Dad_kitchen.png&quot; alt=&quot;Namorada de costas&quot;&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Fim" tags="" position="2475,1700" size="100,100">&lt;style&gt;
+/* =========================
+   CONFIGURAÇÃO GLOBAL
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: &#39;Georgia&#39;, serif;
+  background-image: url(&quot;images/paper_bg.png&quot;);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+}
+
+/* =========================
+   AJUSTE PARA TWINE
+========================= */
+tw-story, tw-passage {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block;
+  background: none !important;
+  line-height: 1 !important;
+}
+
+/* Remove qualquer espaço indesejado acima do conteúdo */
+tw-passage &gt; *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+.cabecalho {
+  max-width: 95vw;
+  margin: 1.5em auto 0 auto;
+  padding: 0 4vw 0.5em;
+}
+
+.cabecalho h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+
+.cabecalho h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  margin: 0.2em 0 0 0;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.overlay {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw 2vw;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COLUNA DE TEXTO
+========================= */
+.texto {
+  flex: 1 1 35%;
+  max-width: 35%;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.2em;
+  text-align: justify;
+  color: #222;
+}
+
+/* =========================
+   COLUNA DE IMAGEM
+========================= */
+.imagem {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: sepia(0.6) contrast(1.1);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+tw-link {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: monospace;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+tw-link:hover {
+  background-color: #222;
+  color: white;
+}
+
+.botao-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+&lt;/style&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;
+
+  &lt;div class=&quot;imagem&quot;&gt;
+    &lt;img src=&quot;images/FIM.png&quot; alt=&quot;Cena da rua à noite&quot;&gt;
+  &lt;/div&gt;
+  
+  
+
+&lt;/div&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
