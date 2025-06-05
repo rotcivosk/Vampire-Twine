@@ -1,0 +1,1 @@
+define a = Character("Adam", color="#ffffff")
