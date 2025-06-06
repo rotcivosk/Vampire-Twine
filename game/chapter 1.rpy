@@ -1,8 +1,19 @@
 ﻿label start:
-    scene bg room
-
+    
+    scene blackbg
+    
     "Você está conversando com Jenny na casa dela."
+    show jenny
+    show j happy
+    j "eae"
 
+    scene jennyroom
+
+    show jenny
+    show j sad
+    j "entendi"
+    
+    $ variB = "left"
     menu:
         "Ela te faz uma pergunta que te pega de surpresa"
         
@@ -25,6 +36,7 @@
         "Você recusa a oferta de Jenny."
         "No caminho de volta para casa, você sente que está sendo seguido por alguém."
 
+    $ variB = None
     menu:
         "Eu deveria..."
 
