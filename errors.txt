@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter 3.rpy", line 40: expected ':' not found.
-    else
-        ^
+File "game/chapter 1.rpy", line 15: end of line expected.
+    with dissolve1, zoom1
+                  ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Wed Jun  4 22:34:48 2025
+Fri Jun  6 17:21:36 2025
