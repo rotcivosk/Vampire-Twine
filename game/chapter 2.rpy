@@ -1,5 +1,7 @@
 label ferido:
 
+    scene blackbg
+
     "2 semanas se passaram desede de o incidente. Você voltou para casa em uma viatura da polícia."
 
     "Você está de castido a uma semana o resto do Ato 2"
@@ -28,6 +30,8 @@ label ferido:
             jump sair_de_casa
 
 label some:
+
+    scene blackbg
 
     "2 semanas se passaram desede de o incidente. Você voltou para casa sem os seus pais notarem que você fugiu de noite."
     "Você vai direto para a casa do seu amigo e fala do seu encontro com o “estranho”."
