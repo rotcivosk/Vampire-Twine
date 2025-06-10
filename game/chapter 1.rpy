@@ -1,109 +1,129 @@
 ﻿label start:
-    
+    play music "audio/Music/ghosts1.ogg" fadein 7 fadeout 4 volume 0.7 
     scene blackbg
-
-    "Eu estou no banheiro escovando o meu dente para ir dormir"
-    "Mas eu começo a sentir que eu esqueci de algo importante"
+    "Eu estou no banheiro escovando o meu dente para ir dormir."
+    "Eu começo a sentir que eu esqueci de algo importante."
     "que dia era hoje mesmo?"
     "..."
-    "....."
     "!"
-    "Amanhã é o aniversário da minha nanmorada"
+    "Amanhã é o aniversário da minha namorada."
+
 
     show Jenny happy:
         zoom 1.3
         xalign 0.5
     with dissolve1
 
-    "Eu comprei para ela um colar"
-    "Eu salvei o dinheiro dos ultimos dois meses para isso"
-    "Mas recentemente ela ficou doente, e eu não parei de pensar nisso a semana toda. Eu acabei esquecendo do colar"
-    "normalmente eu não ficaria muito preucupado. Mas sempre que eu ligo para ela se recusa a explicar o que ela têm."
+
+    "Eu comprei para a Jenny um colar."
+    "Eu salvei o dinheiro dos últimos dois meses trabalhando em fast food para isso."
+    "Mas recentemente ela ficou doente, e eu não parei de pensar nisso a semana toda. Eu acabei esquecendo do colar."
+    "Normalmente eu não ficaria muito preocupado, mas sempre que eu ligo para ela se recusa a explicar o que ela têm."
     "Ela sempre dá uma meia resposta, ou diz que não é nada demais."
-    "Eu sinto que tem algo diferente no jeito que ela fala comigo"
+    "Ela não costuma falar assim comigo. A Jenny sempre me conta tudo e eu sempre conto tudo para ela."
+    "É um hábito nosso. Eu nunca tinha sequer parado para pensar muito nisso até recentemente."
+    "Talvez seja só paranoia. Mas ainda sim."
+
 
     hide Jenny happy
     with dissolve1
-    "Com a quela doença se espalhando por ai eu estou preucupada que ela tenho pego algo ruim"
-    "Talzes eu devesse ligar para os pais dela para..."
-
-    play sound "audio/oldphone_ringtone.ogg" volume 0.8 fadeout 0.5
-    "..."
+    "Eu não consegui comer ontem. Tudo que me vem à cabeça é a Jenny e o maldito noticiário matinal."
+    "Algo sobre o centro da cidade ter sido interditado pela guarda nacional. Meu amigo Paul disse que tem algo haver com uma doença. Um tipo de quarentena."
+    "Eu disse para ele que não fazia sentido nenhum aquilo, que se fosse uma doença séria a ponto de precisar parar parte da cidade nós já teríamos sido avisados, provavelmente pelo prefeito ou algo assim."
+    "Mas agora eu não consigo parar de pensar na possibilidade."
+    "É plausível que a Jenny tenha pego algo do pai voltando do trabalho."
+    "Acho que é melhor simplesmente ligar para os pais dela e perguntar se..."
+ 
+    play sound "audio/Sounds/oldphone_ringtone.ogg" volume 0.9 fadeout 0.5
+    pause
     "hmm?"
-    "São quase 9 da noite"
-    "Quem..."
+    a "São quase 9 da noite"
+    a "Quem..."
+    "Eu vou para a sala em direção ao telefone"
+    "...É a Jenny"
     j "Eu preciso de contar uma coisa MUITO importante."
-    j "Me desculpa não poder dizer nada agora, mas eu preciso conversar com você cara-a-cara..."
+    j "Me desculpa não poder dizer nada agora, mas eu preciso conversar com você cara-a-cara AGORA..."
+    "Eu faço mais perguntas mas ela se recusa a responder. Sem opção, eu pego o meu casaco e vou em direção a casa da Jenny."
+
 
     scene park with dissolve1
 
-    "Estou quase na casa dela. Não é muito longe da minha rua, então eu consigo ir a pé."
-    "A única coisa que me incomoda é ter que vir à noite. A Jenny me disse para vir nesse horário porque ela diz que ela não se sente muito bem de manhã."
-    "Ultimamente nenhuma parte da cidade tem sido muito segura."
+
+    "Eu passo pelo parque perto da minha casa. Eu sempre faço o mesmo caminho para a casa da Jenny. O lugar já é bem familiar para mim, mas é bem mais intimidador no escuro da noite."
+    "Ainda assim, minhas dúvidas tomam boa parte da minha atenção. Vários cenários passam na minha cabeça sobre o que poderia estar acontecendo."
+    "A Jenny me implorou no telefone para não contar nada para ninguém e vir o mais rápido possível."
+
 
     scene sidewalk with dissolve1
-
-    "Eu vi no noticiário que ontem a noite um grupo de bandidos foi passando de casa em casa pelos subúrbios, invadindo casas."
-    "Se eu não for assaltado é possível que eu seja abordado pela polícia."
-    "Essa é a última coisa que eu preciso agora. Eu não deveria ter saído a esse horário e os meus pais vão me matar se eles me verem voltando para casa"
-    "Eu finalmente chego na casa da Jenny"
-
+    "Poderia ser alguma emergência médica? Não, improvável, O pai dela é médico, se ela estivesse doente ela com certeza teria contado algo para ele, não?"
+    "Talvez ela esteja escondendo algo de ruim que ela acha que ela fez? mas o que eu poderia fazer por ela? Eu faria algo, com certeza, mas ainda assim..."
+    "As possibilidades inundam os meus pensamentos conforme eu me aproximo da casa dela."
     scene greens house with dissolve1
+    pause
+    "Faz algum tempo que eu não visito a Jenny na casa dela."
+    "Eu consigo ver ela acenando para mim na entrada da casa."
+    "No momento eu quase me esqueço do porque eu estava lá."
 
-    "Faz algum tempo que eu não vou na casa dela"
-    "..."
-    "Eu consigo ver ela acenando para mim da janela do quarto."
-
-    show jenny
-    show j happy
-    with dissolve1
-    "Ela abre a porta da casa e eu a sigo no escuro até o quarto"
-
-    scene jennyroom 
-    with dissolve1
 
     show jenny
     show j happy
     with dissolve1
+    "Ela sorri para mim mas tem algo de errado. Faz um gesto para eu entrar e eu a sigo no escuro até o quarto."
+    scene jennyroom
+    with dissolve1
 
-    "..."
-    "A jenny me guia para uma"
-    "Eu sento"
+
+    show jenny
+    show j happy
+    with dissolve1
+    pause
+
+
+    "É o quarto dela. Eu nunca vi ele antes. Eu só cheguei a almoçar com a família dela. Uma das paredes está repleta de posters de bandas e atores."
+    "Assim que eu entro ela rapidamente tranca a porta atrás de mim, e a expressão dela fica mais tensa."
+
     hide j happy
     show j sad
     with dissolve1
-    
-    "A Jenny me fala sobre a situação dela. Que ele passou vários dias ficando cada vez mais fraco e sofrendo de alucinações."
-    "Ela está convencida de que ela não beber sangue essa noite ela sente que algo muito ruim vai acontecer com ela"
-    "Eu sei que muitas das pessoas afetadas mencionam para os médicos sintomas de delírio e fome."
-    "Uma sede insaciável de sangue"
-    "Esse é um dos sintomas finais da doença e que se continuar ela levará a morte"
+   
+    "E como se toda força que ela tentou mostrar momentos atrás esvaziasse dela."
+    j "Eu…nem sei por onde começar."
+    "Também sem saber o que dizer, e notando que ela parece que vai chorar eu abraço a Jenny"
+    "A noite foi bem longa. A Jenny me conta como foi a sua última semana e porque ela não me ligou nenhuma vez naquele tempo."
+    "Que ela me disse que tem passado pelo pior momento da vida dela. O pai dela aparentemente pegou algo no trabalho que o deixou internado num hospital pelas últimas 2 semanas, e que ultimamente ela vem se sentido muito mal."
+    "Começou com um cansaço durante a manhã que ficou cada vez mais intenso conforme os dias passavam. Ela cogitou contar para a sua mãe o que estava acontecendo, mas quando as alucinações começaram ela mudou de ideia."
+    j "Eu não sei o que fazer, às vezes eu ouço alguém à noite. Como se tivesse alguém no meu quarto."
+    j "Eu sei que isso não é real, mas me assusta toda vez. Eu nem consigo mais dormir durante a noite e essas vozes e sons estão me levando à loucura. Elas me dizem para fazer coisas também…"
+    "Eu não sei o que dizer, eu quero confortá-la, mas eu não sei se ela está no melhor estado."
+    "Ela também me diz que sua mãe foi visitar uma amiga do outro lado da cidade e ela não quis passar a noite sozinha."
+
+
+    "Talvez eu possa passar a noite com ela, eu não sei o que eu faria depois, mas eu não posso deixar ela sozinha numa casa vazia ouvindo sons e vozes estranhas."
+    "Mas se ela pegou alguma doença do pai dela trabalhando no centro da cidade então talvez essa não seja a melhor ideia."
+
     
     $ variB = None
     menu:
-        "Eu não sei se isso vai ajudar ou não, mas não tenho nenhuma ideia melhor."
+        j "Adam?."
         
-        "Deixar beber sangue":
+        "Eu posso passar a noite com você. Se isso vai te fazer se sentir melhor":
             jump escolha1_deixar_beber
-        "Não deixar beber sangue":
+        "Jenny, você precisa de atendimento médico médico.":
             jump escolha1_nao_deixar
 
     label escolha1_deixar_beber:
 
         $ mordida = True
-        $ renpy.notify("Você tem uma mordida na sua mão esquerda")
 
-        "Jenny te morde e bebe um pouco do seu sangue."
+        "Obridada/(fim provisório/)."
+        return
 
     label escolha1_nao_deixar:
     
         $ mordida = False
 
-        "Você recusa o pedido da Jenny."
-        "você a assegura que as coisas vão ficar melhor"
-        a "Eu vou tentar pegar algo do açugue que tenha sangue para te dar."
-        a "O amigo do meu pai é açogueiro então eu acho que eu consigo algo"
-        "Ela não parece se sentir muito melhor mas não há nada que eu possa fazer no momento. Eu abraço a Jenny e prometo ver ela no dia seguinte"
+        "Ela engole seco/(Fim provisório/)"
+        return
         
     
     scene sidewalk with dissolve1
@@ -131,7 +151,7 @@ label confrontar:
     "Eu decide conversar com a figura sombria."
     a "Ei!."
     "..."
-    "Ele não responde, ele apenas fica parado e depous de um tempo começa a se aproximar"
+    "Ele não responde, ele apenas fica parado e depois de um tempo começa a se aproximar"
 
     show vampire
     show v neutral
