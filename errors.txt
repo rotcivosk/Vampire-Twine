@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter 1.rpy", line 143: Say menuitems and captions may not exist in the same menu.
-    j "você pode deitar comigo um pouco?"
-                                         ^
+File "game/characters.rpy", line 47: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    fadein 0.5 alpha 1.0         
+               ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Tue Jun 10 19:47:58 2025
+Wed Jun 11 18:10:30 2025
