@@ -16,7 +16,7 @@
 
 
     "Eu comprei para a Jenny um colar."
-    "Eu salvei o dinheiro dos últimos dois meses trabalhando em fast food para isso."
+    "Eu salvei o dinheiro dos últimos dois meses trabalhando meio período numa loja de conveniências."
     "Mas recentemente ela ficou doente, e eu não parei de pensar nisso a semana toda. Eu acabei esquecendo do colar."
     "Normalmente eu não ficaria muito preocupado, mas sempre que eu ligo para ela se recusa a explicar o que ela têm."
     "Ela sempre dá uma meia resposta, ou diz que não é nada demais."
@@ -108,23 +108,68 @@
         
         "Eu posso passar a noite com você. Se isso vai te fazer se sentir melhor":
             jump escolha1_deixar_beber
-        "Jenny, você precisa de atendimento médico médico.":
+        "Jenny, você precisa de atendimento médico.":
             jump escolha1_nao_deixar
 
     label escolha1_deixar_beber:
 
         $ mordida = True
 
-        "Obridada/(fim provisório/)."
-        return
+        j "Obrigada."
+        "Uma expressão de alívio passa pelo seu rosto, enquanto ela se senta na cama."
+        j "Eu tenho ficado tão sozinha ultimamente, mas eu não aguentava guardar isso só pra mim; eu tive medo que se alguém descobrisse eu seria colocada em um hospital contra a minha vontade."
+        j "Quando a minha mãe disse que iria sair de casa eu entrei em pânico. Eu liguei pra você logo depois dela sair."
+        menu:
+            "Porque você não contou pra mim?":
+                j "porque, eu... não sei...eu..."
+                "Eu sinto algum arrependimento de ter perguntado."
+                "Ela devia estar com medo que eu ligasse para os pais dela, mesmo que só por preocupação."
+                "Mas não é como se a situação dela fosse melhorar repentinamente a esse ponto."
+                "Ela precisa de ajuda profissional. Não tem muito que eu possa fazer por mim mesmo."
+                pause
+                "Não tem razão pra questionar agora. Ela precisa de ajuda agora, não julgamento."
+                "Amanhã eu vou tentar convencer ela a ir para o hospital. Eu posso pedir para o meu amigo Paul levar a gente."
+
+            "*apenas abraçar a Jenny*":
+                "Eu abracei ela por um bom tempo. Não sei se nada que eu falar vai melhorar a situação."
+                "Ela precisa de mim agora e eu não preciso preocupar ela com a possibilidade de ser levada para um sanatório."
+                "É a doença, eu tenho certeza."
+                "Talvez eu consiga convencer ela ir ao hospital amanhã. Eu posso pedir para o meu amigo Paul levar a gente."
+                "Mas agora a melhor coisa é tentar confortá-la."
+
+        "Eu deito num colchão improvisado com vários cobertores e travesseiros. Não é muito confortável, mas eu não acho uma boa ideia dormir na mesma cama que a Jenny."
+        "Eu sei que ela fica muito nervosa com esse tipo de intimidade às vezes, mas é ainda pior nessas situações."
+        "Mas ela me surpreende"
+        j "você pode deitar comigo um pouco?"
+        j "Até eu dormir pelo menos. Você pode voltar para o chão depois se quiser mas eu não me importo se você quiser ficar."
+        "Sem pensar muito eu aceito e subo na cama junto dela."
+        pause
+        "Nós estamos deitados juntos na cama. Eu fico atrás dela com o meu braço sobre o seu corpo segurando a mão dela."
+        "Apesar da posição ser bem íntima, eu sinto mais do que qualquer coisa uma certa...satisfação?"
+        "Tem algo bem confortante em saber que eu estou ajudando a Jenny simplesmente por estar aqui."
+        "Que no momento de maior fraqueza dela ela confiou em mim para ficar com ela."
+        "Eu não sei o que vai acontecer amanhã, mas eu sei que ela vai confiar em mim."
+        "Esse sentimento me conforta conforme o sono vai tomando conta de mim."
+        pause
+        a "hm?"
+        "Eu acordei, mas ainda é de noite."
+        "Eu olho para a minha direita, a Jenny parece que conseguiu cair no sono."
+        "Eu puxo o meu braço debaixo do pescoço da Jenny. Ele ficou dormente por ter sido espremido por muito tempo."
+        "Quando eu recupero a minha circulação eu olho para o meu relógio de pulso."
+        "Já tá bem tarde. Eu deveria voltar para casa, não é uma boa ideia voltar de manhã e ser interrogado pelos meus pais."
+        "Eu arrumo minhas coisas e saio. Mas antes eu dei um beijo na testa da Jenny."
+        jump sidewalk_encounter
+        
 
     label escolha1_nao_deixar:
     
         $ mordida = False
 
-        "Ela engole seco/(Fim provisório/)"
-        return
+        "Ela engole seco."
+        jump sidewalk_encounter
+       
         
+label sidewalk_encounter:
     
     scene sidewalk with dissolve1
 
@@ -144,29 +189,29 @@
         "Correr":
             jump correr
 
-label confrontar:
+    label confrontar:
 
-    scene sidewalk with dissolve1
+        scene sidewalk with dissolve1
 
-    "Eu decide conversar com a figura sombria."
-    a "Ei!."
-    "..."
-    "Ele não responde, ele apenas fica parado e depois de um tempo começa a se aproximar"
+        "Eu decide conversar com a figura sombria."
+        a "Ei!."
+        "..."
+        "Ele não responde, ele apenas fica parado e depois de um tempo começa a se aproximar"
 
-    show vampire
-    show v neutral
-    with dissolve
-    "..."
-    "Tem algo de errado com ele."
-    "Ele se aproxima mais."
-    "*continuar aqui."
-    
-    jump ferido
+        show vampire
+        show v neutral
+        with dissolve
+        "..."
+        "Tem algo de errado com ele."
+        "Ele se aproxima mais."
+        "*continuar aqui."
+        
+        jump ferido
 
-label correr:
-    "Você começa a correr desesperadamente."
-    "Ele corre atrás de você."
-    "Você é atropelado, mas não se machuca muito."
-    "Seu amigo te leva pra casa e o vampiro some."
+    label correr:
+        "Você começa a correr desesperadamente."
+        "Ele corre atrás de você."
+        "Você é atropelado, mas não se machuca muito."
+        "Seu amigo te leva pra casa e o vampiro some."
 
-    jump some
+        jump some
