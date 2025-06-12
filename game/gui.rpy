@@ -66,7 +66,7 @@ define gui.name_text_font = "fonts/GloriaHallelujah-Regular.ttf"
 define gui.interface_text_font = "fonts/GloriaHallelujah-Regular.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 33
+define gui.text_size = 30
 
 ## The size of character names.
 define gui.name_text_size = 45
@@ -97,7 +97,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## time.
 
 ## The height of the textbox containing dialogue.
-define gui.textbox_height = 278
+define gui.textbox_height = 310
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.

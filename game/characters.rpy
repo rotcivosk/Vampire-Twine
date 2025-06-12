@@ -6,6 +6,8 @@ define s = Character("Sister", color="#ffffff")
 define p = Character("Paul", color="#ffffff")
 define o = Character("Police Officer", color="#ffffff")
 
+define nrt = Character(ctc="ctc_blink", ctc_position="nestled")
+
 #Characters images
 layeredimage Jenny:
     always:
@@ -38,3 +40,16 @@ screen choice(items):
 #transitions
 
 define dissolve1 = Dissolve(0.5)
+
+#Animations
+image ctc_blink:
+    zoom 0.8 center
+    "images/icons/ctc01.png"        
+    linear 0.5 alpha 1.0    
+    "images/icons/ctc01.png"         
+    easeout 1.0 alpha 0         
+    "images/icons/ctc01.png"        
+    linear 0.5 alpha 0         
+    "images/icons/ctc01.png"        
+    easeout 1.0 alpha 1.0    
+    repeat

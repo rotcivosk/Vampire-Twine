@@ -1,113 +1,200 @@
 ﻿label start:
-    
+    play music "audio/Music/ghosts1.ogg" fadein 7 fadeout 4 volume 0.7 
     scene blackbg
+    nrt "Eu estou no banheiro escovando o meu dente para ir dormir."
+    nrt "Eu começo a sentir que eu esqueci de algo importante."
+    nrt "que dia era hoje mesmo?"
+    nrt "..."
+    nrt "!"
+    nrt "Amanhã é o aniversário da minha namorada."
 
-    "Eu estou no banheiro escovando o meu dente para ir dormir"
-    "Mas eu começo a sentir que eu esqueci de algo importante"
-    "que dia era hoje mesmo?"
-    "..."
-    "....."
-    "!"
-    "Amanhã é o aniversário da minha nanmorada"
 
     show Jenny happy:
         zoom 1.3
         xalign 0.5
     with dissolve1
 
-    "Eu comprei para ela um colar"
-    "Eu salvei o dinheiro dos ultimos dois meses para isso"
-    "Mas recentemente ela ficou doente, e eu não parei de pensar nisso a semana toda. Eu acabei esquecendo do colar"
-    "normalmente eu não ficaria muito preucupado. Mas sempre que eu ligo para ela se recusa a explicar o que ela têm."
-    "Ela sempre dá uma meia resposta, ou diz que não é nada demais."
-    "Eu sinto que tem algo diferente no jeito que ela fala comigo"
+
+    nrt "Eu comprei para a Jenny um colar."
+    nrt "Eu salvei o dinheiro dos últimos dois meses trabalhando meio período numa loja de conveniências."
+    nrt "Mas recentemente ela ficou doente, e eu não parei de pensar nisso a semana toda. Eu acabei esquecendo do colar."
+    nrt "Normalmente eu não ficaria muito preocupado, mas sempre que eu ligo para ela se recusa a explicar o que ela têm."
+    nrt "Ela sempre dá uma meia resposta, ou diz que não é nada demais."
+    nrt "Ela não costuma falar assim comigo. A Jenny sempre me conta tudo e eu sempre conto tudo para ela."
+    nrt "É um hábito nosso. Eu nunca tinha sequer parado para pensar muito nisso até recentemente."
+    nrt "Talvez seja só paranoia. Mas ainda sim."
+
 
     hide Jenny happy
     with dissolve1
-    "Com a quela doença se espalhando por ai eu estou preucupada que ela tenho pego algo ruim"
-    "Talzes eu devesse ligar para os pais dela para..."
-
-    play sound "audio/oldphone_ringtone.ogg" volume 0.8 fadeout 0.5
-    "..."
-    "hmm?"
-    "São quase 9 da noite"
-    "Quem..."
+    nrt "Eu não consegui comer ontem. Tudo que me vem à cabeça é a Jenny e o maldito noticiário matinal."
+    nrt "Algo sobre o centro da cidade ter sido interditado pela guarda nacional. Meu amigo Paul disse que tem algo haver com uma doença. Um tipo de quarentena."
+    nrt "Eu disse para ele que não fazia sentido nenhum aquilo, que se fosse uma doença séria a ponto de precisar parar parte da cidade nós já teríamos sido avisados, provavelmente pelo prefeito ou algo assim."
+    nrt "Mas agora eu não consigo parar de pensar na possibilidade."
+    nrt "É plausível que a Jenny tenha pego algo do pai voltando do trabalho."
+    nrt "Acho que é melhor simplesmente ligar para os pais dela e perguntar se..."
+ 
+    play sound "audio/Sounds/oldphone_ringtone.ogg" volume 0.9 fadeout 0.5
+    pause
+    a "hmm?"
+    a "São quase 9 da noite"
+    a "Quem..."
+    nrt "Eu vou para a sala em direção ao telefone"
+    "...É a Jenny"
     j "Eu preciso de contar uma coisa MUITO importante."
-    j "Me desculpa não poder dizer nada agora, mas eu preciso conversar com você cara-a-cara..."
+    j "Me desculpa não poder dizer nada agora, mas eu preciso conversar com você cara-a-cara AGORA..."
+    nrt "Eu faço mais perguntas mas ela se recusa a responder. Sem opção, eu pego o meu casaco e vou em direção a casa da Jenny."
+
 
     scene park with dissolve1
 
-    "Estou quase na casa dela. Não é muito longe da minha rua, então eu consigo ir a pé."
-    "A única coisa que me incomoda é ter que vir à noite. A Jenny me disse para vir nesse horário porque ela diz que ela não se sente muito bem de manhã."
-    "Ultimamente nenhuma parte da cidade tem sido muito segura."
+
+    nrt "Eu passo pelo parque perto da minha casa. Eu sempre faço o mesmo caminho para a casa da Jenny. O lugar já é bem familiar para mim, mas é bem mais intimidador no escuro da noite."
+    nrt "Ainda assim, minhas dúvidas tomam boa parte da minha atenção. Vários cenários passam na minha cabeça sobre o que poderia estar acontecendo."
+    nrt "A Jenny me implorou no telefone para não contar nada para ninguém e vir o mais rápido possível."
+
 
     scene sidewalk with dissolve1
-
-    "Eu vi no noticiário que ontem a noite um grupo de bandidos foi passando de casa em casa pelos subúrbios, invadindo casas."
-    "Se eu não for assaltado é possível que eu seja abordado pela polícia."
-    "Essa é a última coisa que eu preciso agora. Eu não deveria ter saído a esse horário e os meus pais vão me matar se eles me verem voltando para casa"
-    "Eu finalmente chego na casa da Jenny"
-
+    nrt "Poderia ser alguma emergência médica? Não, improvável, O pai dela é médico, se ela estivesse doente ela com certeza teria contado algo para ele, não?"
+    nrt "Talvez ela esteja escondendo algo de ruim que ela acha que ela fez? mas o que eu poderia fazer por ela? Eu faria algo, com certeza, mas ainda assim..."
+    nrt "As possibilidades inundam os meus pensamentos conforme eu me aproximo da casa dela."
     scene greens house with dissolve1
+    pause
+    nrt "Faz algum tempo que eu não visito a Jenny na casa dela."
+    nrt "Eu consigo ver ela acenando para mim na entrada da casa."
+    nrt "No momento eu quase me esqueço do porque eu estava lá."
 
-    "Faz algum tempo que eu não vou na casa dela"
-    "..."
-    "Eu consigo ver ela acenando para mim da janela do quarto."
-
-    show jenny
-    show j happy
-    with dissolve1
-    "Ela abre a porta da casa e eu a sigo no escuro até o quarto"
-
-    scene jennyroom 
-    with dissolve1
 
     show jenny
     show j happy
     with dissolve1
+    nrt "Ela sorri para mim mas tem algo de errado. Faz um gesto para eu entrar e eu a sigo no escuro até o quarto."
+    scene jennyroom
+    with dissolve1
 
-    "..."
-    "A jenny me guia para uma"
-    "Eu sento"
+
+    show jenny
+    show j happy
+    with dissolve1
+    pause
+
+
+    nrt "É o quarto dela. Eu nunca vi ele antes. Eu só cheguei a almoçar com a família dela. Uma das paredes está repleta de posters de bandas e atores."
+    nrt "Assim que eu entro ela rapidamente tranca a porta atrás de mim, e a expressão dela fica mais tensa."
+
     hide j happy
     show j sad
     with dissolve1
-    
-    "A Jenny me fala sobre a situação dela. Que ele passou vários dias ficando cada vez mais fraco e sofrendo de alucinações."
-    "Ela está convencida de que ela não beber sangue essa noite ela sente que algo muito ruim vai acontecer com ela"
-    "Eu sei que muitas das pessoas afetadas mencionam para os médicos sintomas de delírio e fome."
-    "Uma sede insaciável de sangue"
-    "Esse é um dos sintomas finais da doença e que se continuar ela levará a morte"
+   
+    nrt "E como se toda força que ela tentou mostrar momentos atrás esvaziasse dela."
+    j "Eu…nem sei por onde começar."
+    nrt "Também sem saber o que dizer, e notando que ela parece que vai chorar eu abraço a Jenny"
+    nrt "A noite foi bem longa. A Jenny me conta como foi a sua última semana e porque ela não me ligou nenhuma vez naquele tempo."
+    nrt "Que ela me disse que tem passado pelo pior momento da vida dela. O pai dela aparentemente pegou algo no trabalho que o deixou internado num hospital pelas últimas 2 semanas, e que ultimamente ela vem se sentido muito mal."
+    nrt "Começou com um cansaço durante a manhã que ficou cada vez mais intenso conforme os dias passavam. Ela cogitou contar para a sua mãe o que estava acontecendo, mas quando as alucinações começaram ela mudou de ideia."
+    j "Eu não sei o que fazer, às vezes eu ouço alguém à noite. Como se tivesse alguém no meu quarto."
+    j "Eu sei que isso não é real, mas me assusta toda vez. Eu nem consigo mais dormir durante a noite e essas vozes e sons estão me levando à loucura. Elas me dizem para fazer coisas também…"
+    nrt "Eu não sei o que dizer, eu quero confortá-la, mas eu não sei se ela está no melhor estado."
+    nrt "Ela também me diz que sua mãe foi visitar uma amiga do outro lado da cidade e ela não quis passar a noite sozinha."
+
+
+    nrt "Talvez eu possa passar a noite com ela, eu não sei o que eu faria depois, mas eu não posso deixar ela sozinha numa casa vazia ouvindo sons e vozes estranhas."
+    nrt "Mas se ela pegou alguma doença do pai dela trabalhando no centro da cidade então talvez essa não seja a melhor ideia."
+
     
     $ variB = None
     menu:
-        "Eu não sei se isso vai ajudar ou não, mas não tenho nenhuma ideia melhor."
+        j "Adam?."
         
-        "Deixar beber sangue":
+        "Eu posso passar a noite com você. Se isso vai te fazer se sentir melhor":
             jump escolha1_deixar_beber
-        "Não deixar beber sangue":
+        "Jenny, você precisa de atendimento médico.":
             jump escolha1_nao_deixar
 
     label escolha1_deixar_beber:
 
         $ mordida = True
-        $ renpy.notify("Você tem uma mordida na sua mão esquerda")
 
-        "Jenny te morde e bebe um pouco do seu sangue."
+        j "Obrigada."
+        nrt "Uma expressão de alívio passa pelo seu rosto, enquanto ela se senta na cama."
+        j "Eu tenho ficado tão sozinha ultimamente, mas eu não aguentava guardar isso só pra mim; eu tive medo que se alguém descobrisse eu seria colocada em um hospital contra a minha vontade."
+        j "Quando a minha mãe disse que iria sair de casa eu entrei em pânico. Eu liguei pra você logo depois dela sair."
+        menu:
+            "Porque você não contou pra mim?":
+                j "porque, eu... não sei...eu..."
+                nrt "Eu sinto algum arrependimento de ter perguntado."
+                nrt "Ela devia estar com medo que eu ligasse para os pais dela, mesmo que só por preocupação."
+                nrt "Mas não é como se a situação dela fosse melhorar repentinamente a esse ponto."
+                nrt "Ela precisa de ajuda profissional. Não tem muito que eu possa fazer por mim mesmo."
+                pause
+                nrt "Não tem razão pra questionar agora. Ela precisa de ajuda agora, não julgamento."
+                nrt "Amanhã eu vou tentar convencer ela a ir para o hospital. Eu posso pedir para o meu amigo Paul levar a gente."
+
+            "*apenas abraçar a Jenny*":
+                nrt "Eu abracei ela por um bom tempo. Não sei se nada que eu falar vai melhorar a situação."
+                nrt "Ela precisa de mim agora e eu não preciso preocupar ela com a possibilidade de ser levada para um sanatório."
+                nrt "É a doença, eu tenho certeza."
+                nrt "Talvez eu consiga convencer ela ir ao hospital amanhã. Eu posso pedir para o meu amigo Paul levar a gente."
+                nrt "Mas agora a melhor coisa é tentar confortá-la."
+
+        nrt "Eu deito num colchão improvisado com vários cobertores e travesseiros. Não é muito confortável, mas eu não acho uma boa ideia dormir na mesma cama que a Jenny."
+        nrt "Eu sei que ela fica muito nervosa com esse tipo de intimidade às vezes, mas é ainda pior nessas situações."
+        nrt "Mas ela me surpreende"
+        j "você pode deitar comigo um pouco?"
+        j "Até eu dormir pelo menos. Você pode voltar para o chão depois se quiser mas eu não me importo se você quiser ficar."
+        nrt "Sem pensar muito eu aceito e subo na cama junto dela."
+        pause
+        nrt "Nós estamos deitados juntos na cama. Eu fico atrás dela com o meu braço sobre o seu corpo segurando a mão dela."
+        nrt "Apesar da posição ser bem íntima, eu sinto mais do que qualquer coisa uma certa...satisfação?"
+        nrt "Tem algo bem confortante em saber que eu estou ajudando a Jenny simplesmente por estar aqui."
+        nrt "Que no momento de maior fraqueza dela ela confiou em mim para ficar com ela."
+        nrt "Eu não sei o que vai acontecer amanhã, mas eu sei que ela vai confiar em mim."
+        nrt "Esse sentimento me conforta conforme o sono vai tomando conta de mim."
+        pause
+        a "hm?"
+        nrt "Eu acordei, mas ainda é de noite."
+        nrt "Eu olho para a minha direita, a Jenny parece que conseguiu cair no sono."
+        nrt "Eu puxo o meu braço debaixo do pescoço da Jenny. Ele ficou dormente por ter sido espremido por muito tempo."
+        nrt "Quando eu recupero a minha circulação eu olho para o meu relógio de pulso."
+        nrt "Já tá bem tarde. Eu deveria voltar para casa, não é uma boa ideia voltar de manhã e ser interrogado pelos meus pais."
+        nrt "Eu arrumo minhas coisas e saio. Mas antes eu dei um beijo na testa da Jenny."
+        jump sidewalk_encounter
+        
 
     label escolha1_nao_deixar:
     
         $ mordida = False
 
-        "Você recusa o pedido da Jenny."
-        "você a assegura que as coisas vão ficar melhor"
-        a "Eu vou tentar pegar algo do açugue que tenha sangue para te dar."
-        a "O amigo do meu pai é açogueiro então eu acho que eu consigo algo"
-        "Ela não parece se sentir muito melhor mas não há nada que eu possa fazer no momento. Eu abraço a Jenny e prometo ver ela no dia seguinte"
+        nrt "Ela engole seco."
+        jump sidewalk_encounter
+       
         
+label sidewalk_encounter:
     
     scene sidewalk with dissolve1
+    nrt "Eu sinto algo me seguindo..."
 
+    nrt "FIM DA DEMO"
+
+    jump creditos
+
+    label creditos:
+        nrt "Obrigado por jogar nosso jogo."
+        nrt "Ele é levemente inspirado no livro eu Sou A Lenda (I am the legend)"
+        nrt "Esse jogo foi feito como um projeto de faculdade para A Universide Estadual do Amazonas - Escola Supeorior de Tecnologia.(UEA-EST)"
+        nrt "A música usada foi do Album Ghosts, pela banda Nine Inch Nails, sub uma licença de uso não-comercial."
+        nrt "Os sons foram tirados do site: pixabay.com, também sub uma licença de uso não-comercial"
+
+        nrt "Colaboradores do projeto:"
+
+        nrt "Arte e UI - Eric Valente (personagens) - Lucas Castro (Fundos), Jade(Elementos de UI)"
+        nrt "Programação - Victor - Eric Valente"
+        nrt "Roteiro - Ana Lívia - Eric Valente"
+        nrt "Obrigado novamente."  
+        return
+
+
+    #Continuar daqui
     "O caminho devolta para cas apesar de não ser muito longo me dá calafrios"
     "A vizinhança é um breu quase total fora das luzes dos postes. Se algo estivesse me seguindode lçonge eu não notaria"
     "Por extinto eu olha para tras, esperando algo."
@@ -124,29 +211,29 @@
         "Correr":
             jump correr
 
-label confrontar:
+    label confrontar:
 
-    scene sidewalk with dissolve1
+        scene sidewalk with dissolve1
 
-    "Eu decide conversar com a figura sombria."
-    a "Ei!."
-    "..."
-    "Ele não responde, ele apenas fica parado e depous de um tempo começa a se aproximar"
+        "Eu decide conversar com a figura sombria."
+        a "Ei!."
+        "..."
+        "Ele não responde, ele apenas fica parado e depois de um tempo começa a se aproximar"
 
-    show vampire
-    show v neutral
-    with dissolve
-    "..."
-    "Tem algo de errado com ele."
-    "Ele se aproxima mais."
-    "*continuar aqui."
-    
-    jump ferido
+        show vampire
+        show v neutral
+        with dissolve
+        "..."
+        "Tem algo de errado com ele."
+        "Ele se aproxima mais."
+        "*continuar aqui."
+        
+        jump ferido
 
-label correr:
-    "Você começa a correr desesperadamente."
-    "Ele corre atrás de você."
-    "Você é atropelado, mas não se machuca muito."
-    "Seu amigo te leva pra casa e o vampiro some."
+    label correr:
+        "Você começa a correr desesperadamente."
+        "Ele corre atrás de você."
+        "Você é atropelado, mas não se machuca muito."
+        "Seu amigo te leva pra casa e o vampiro some."
 
-    jump some
+        jump some
